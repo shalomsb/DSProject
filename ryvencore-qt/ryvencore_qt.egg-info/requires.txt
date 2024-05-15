@@ -1,0 +1,4 @@
+ryvencore==0.3.1.*
+PySide2
+QtPy
+waiting
