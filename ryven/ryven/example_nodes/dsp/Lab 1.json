@@ -5,8 +5,8 @@
     },
     "required packages": [
         {
-            "name": "DSProject",
-            "dir": "C:\\Users\\shalo\\AppData\\Local\\Programs\\Python\\Python310\\Lib\\site-packages\\ryven\\example_nodes\\DSProject"
+            "name": "dsp",
+            "dir": "C:/Users/shalo/Shalom Projects/DSProject/ryven/ryven/example_nodes/dsp"
         }
     ],
     "scripts": [
@@ -33,7 +33,7 @@
                 "algorithm mode": "data",
                 "nodes": [
                     {
-                        "identifier": "DSProject.ZOH",
+                        "identifier": "dsp.ZOH",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -63,7 +63,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.Gain",
+                        "identifier": "dsp.Gain",
                         "version": "v0.1",
                         "state data": "gASVEgAAAAAAAAB9lIwEZ2FpbpSMBGdhaW6Ucy4=",
                         "additional data": {
@@ -93,7 +93,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.Gain",
+                        "identifier": "dsp.Gain",
                         "version": "v0.1",
                         "state data": "gASVFAAAAAAAAAB9lIwEZ2FpbpSMBmdhaW4qMpRzLg==",
                         "additional data": {
@@ -123,7 +123,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.PlotNew",
+                        "identifier": "dsp.PlotNew",
                         "version": "v0.1",
                         "state data": "gASVPAAAAAAAAAB9lCiMDG51bV9vZl9wb3J0c5RLAYwHeF9yYW5nZZRHP3R64UeuFHuMB3lfcmFuZ2WUR0B5AAAAAAAAdS4=",
                         "additional data": {
@@ -147,7 +147,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.PlotNew",
+                        "identifier": "dsp.PlotNew",
                         "version": "v0.1",
                         "state data": "gASVPAAAAAAAAAB9lCiMDG51bV9vZl9wb3J0c5RLAYwHeF9yYW5nZZRHP3R64UeuFHuMB3lfcmFuZ2WUR0B5AAAAAAAAdS4=",
                         "additional data": {
@@ -171,7 +171,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.ToInt16",
+                        "identifier": "dsp.ToInt16",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -201,7 +201,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.Signal",
+                        "identifier": "dsp.Signal",
                         "version": "v0.1",
                         "state data": "gASVNwAAAAAAAAB9lCiMCWFtcGxpdHVkZZSMA2FtcJSMCWZyZXF1ZW5jeZSMBGZyZXGUjAR0eXBllIwDc2lulHUu",
                         "additional data": {
@@ -230,7 +230,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.Timer_Node",
+                        "identifier": "dsp.Timer_Node",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -335,7 +335,7 @@
                 "algorithm mode": "data",
                 "nodes": [
                     {
-                        "identifier": "DSProject.DigitalFilterDesign",
+                        "identifier": "dsp.DigitalFilterDesign",
                         "version": null,
                         "state data": "gASVEgIAAAAAAAB9lCiMDXJlc3BvbnNlX3R5cGWUjAdMb3dwYXNzlIwMZmlsdGVyX29yZGVylEt6jA1kZXNpZ25fbWV0aG9klIwDRklSlIwKaWlyX2Rlc2lnbpSMC0J1dHRlcndvcnRolIwKZmlyX2Rlc2lnbpSMCkVxdWlyaXBwbGWUjA53aW5kb3dfb3B0aW9uc5SMCEJhcnRsZXR0lIwCZnOUR0DncAAAAAAAjAJmY5RLAYwJZnBhc3NfbHBmlEdAq1gAAAAAAIwJZnN0b3BfbHBmlEdAsZQAAAAAAIwJd3Bhc3NfbHBmlEc/8AAAAAAAAIwJd3N0b3BfbHBmlEdAgfgAAAAAAIwJZnBhc3NfaHBmlE3gLowJZnN0b3BfaHBmlE2AJYwJd3Bhc3NfaHBmlEsBjAl3c3RvcF9ocGaUSwGMCmZzdG9wMV9icGaUTSAcjApmcGFzczFfYnBmlE2AJYwKZnBhc3MyX2JwZpRN4C6MCmZzdG9wMl9icGaUTUA4jAp3c3RvcDFfYnBmlEsBjAl3cGFzc19icGaUSwGMCndzdG9wMl9icGaUSwGMCmZwYXNzMV9ic2aUTSAcjApmc3RvcDFfYnNmlE2AJYwKZnN0b3AyX2JzZpRN4C6MCmZwYXNzMl9ic2aUTUA4jAp3cGFzczFfYnNmlEsBjAl3c3RvcF9ic2aUSwGMCndwYXNzMl9ic2aUSwF1Lg==",
                         "additional data": {
@@ -365,7 +365,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.ZOH",
+                        "identifier": "dsp.ZOH",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -395,7 +395,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.PlotNew",
+                        "identifier": "dsp.PlotNew",
                         "version": "v0.1",
                         "state data": "gASVPAAAAAAAAAB9lCiMDG51bV9vZl9wb3J0c5RLAowHeF9yYW5nZZRHP3BiTdLxqfyMB3lfcmFuZ2WUR0CfQAAAAAAAdS4=",
                         "additional data": {
@@ -425,7 +425,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.Timer_Node",
+                        "identifier": "dsp.Timer_Node",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -448,7 +448,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.Signal",
+                        "identifier": "dsp.Signal",
                         "version": "v0.1",
                         "state data": "gASVOwAAAAAAAAB9lCiMCWFtcGxpdHVkZZSMA2FtcJSMCWZyZXF1ZW5jeZSMCGZfc2lnbmFslIwEdHlwZZSMA3NpbpR1Lg==",
                         "additional data": {
@@ -477,7 +477,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.Delay",
+                        "identifier": "dsp.Delay",
                         "version": "v0.1",
                         "state data": "gASVDgAAAAAAAAB9lIwFZGVsYXmUSz1zLg==",
                         "additional data": {
@@ -579,7 +579,7 @@
                 "algorithm mode": "data",
                 "nodes": [
                     {
-                        "identifier": "DSProject.Timer_Node",
+                        "identifier": "dsp.Timer_Node",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -602,7 +602,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.PlotNew",
+                        "identifier": "dsp.PlotNew",
                         "version": "v0.1",
                         "state data": "gASVPAAAAAAAAAB9lCiMDG51bV9vZl9wb3J0c5RLAYwHeF9yYW5nZZRHP4R64UeuFHuMB3lfcmFuZ2WUR0CjiAAAAAAAdS4=",
                         "additional data": {
@@ -626,7 +626,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.ZOH",
+                        "identifier": "dsp.ZOH",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -656,7 +656,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.ToInt16",
+                        "identifier": "dsp.ToInt16",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -686,7 +686,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.Signal",
+                        "identifier": "dsp.Signal",
                         "version": "v0.1",
                         "state data": "gASVQAAAAAAAAAB9lCiMCWFtcGxpdHVkZZSMBDEwMDCUjAlmcmVxdWVuY3mUjAxmX3NpZ25hbCoxLzKUjAR0eXBllIwDc2lulHUu",
                         "additional data": {
@@ -715,7 +715,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.Signal",
+                        "identifier": "dsp.Signal",
                         "version": "v0.1",
                         "state data": "gASVPAAAAAAAAAB9lCiMCWFtcGxpdHVkZZSMBDE1MDCUjAlmcmVxdWVuY3mUjAhmX3NpZ25hbJSMBHR5cGWUjANzaW6UdS4=",
                         "additional data": {
@@ -744,7 +744,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.NewPlus",
+                        "identifier": "dsp.NewPlus",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -780,7 +780,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.WriteWavAudio",
+                        "identifier": "dsp.WriteWavAudio",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -804,7 +804,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.PlayAudio",
+                        "identifier": "dsp.PlayAudio",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -828,7 +828,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.SpectrumAndSpectrogramAnalyzer",
+                        "identifier": "dsp.SpectrumAndSpectrogramAnalyzer",
                         "version": null,
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -949,7 +949,7 @@
                 "algorithm mode": "data",
                 "nodes": [
                     {
-                        "identifier": "DSProject.Timer_Node",
+                        "identifier": "dsp.Timer_Node",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -972,7 +972,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.ReadAudio",
+                        "identifier": "dsp.ReadAudio",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -1001,7 +1001,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.Switch_Node",
+                        "identifier": "dsp.Switch_Node",
                         "version": null,
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -1037,7 +1037,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.ReadWavAudio",
+                        "identifier": "dsp.ReadWavAudio",
                         "version": null,
                         "state data": "gASVMwAAAAAAAAB9lIwEcGF0aJSMJVB5Y2hhcm1Qcm9qZWN0c1xEU1Byb2plY3RccmVjb3JkMS53YXaUcy4=",
                         "additional data": {
@@ -1066,7 +1066,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.PlotNew",
+                        "identifier": "dsp.PlotNew",
                         "version": "v0.1",
                         "state data": "gASVPAAAAAAAAAB9lCiMDG51bV9vZl9wb3J0c5RLAYwHeF9yYW5nZZRHP/AAAAAAAACMB3lfcmFuZ2WURz/wAAAAAAAAdS4=",
                         "additional data": {
@@ -1090,7 +1090,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.PlayAudio",
+                        "identifier": "dsp.PlayAudio",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -1114,7 +1114,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.ToInt16",
+                        "identifier": "dsp.ToInt16",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -1144,7 +1144,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.WriteWavAudio",
+                        "identifier": "dsp.WriteWavAudio",
                         "version": "v0.1",
                         "state data": "gAR9lC4=",
                         "additional data": {
@@ -1168,7 +1168,7 @@
                         "collapsed": false
                     },
                     {
-                        "identifier": "DSProject.SpectrumAndSpectrogramAnalyzer",
+                        "identifier": "dsp.SpectrumAndSpectrogramAnalyzer",
                         "version": null,
                         "state data": "gAR9lC4=",
                         "additional data": {
