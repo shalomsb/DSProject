@@ -1,0 +1,1387 @@
+{
+    "general info": {
+        "type": "Ryven project file",
+        "ryven version": "v3.1"
+    },
+    "required packages": [
+        {
+            "name": "DSProject",
+            "dir": "C:/Users/shalo/AppData/Local/Programs/Python/Python310/Lib/site-packages/ryven/example_nodes/DSProject"
+        }
+    ],
+    "scripts": [
+        {
+            "title": "Ex.3.1",
+            "variables": {
+                "fs": {
+                    "serialized": "gASVBgAAAAAAAABKAHcBAC4="
+                },
+                "frame_size": {
+                    "serialized": "gASVBAAAAAAAAABNAAgu"
+                },
+                "FixedPointFactor": {
+                    "serialized": "gASVBAAAAAAAAABNAIAu"
+                },
+                "Amp1": {
+                    "serialized": "gASVCgAAAAAAAABHP+mZmZmZmZou"
+                },
+                "f_signal": {
+                    "serialized": "gASVBAAAAAAAAABNuAsu"
+                }
+            },
+            "flow": {
+                "algorithm mode": "data",
+                "nodes": [
+                    {
+                        "identifier": "DSProject.Timer_Node",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "timer"
+                        },
+                        "inputs": [],
+                        "outputs": [
+                            {
+                                "type": "exec",
+                                "label": "",
+                                "GID": 8
+                            }
+                        ],
+                        "GID": 7,
+                        "pos x": 116.0,
+                        "pos y": 148.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.Signal",
+                        "version": "v0.1",
+                        "state data": "gASVPAAAAAAAAAB9lCiMCWFtcGxpdHVkZZSMBEFtcDGUjAlmcmVxdWVuY3mUjAhmX3NpZ25hbJSMBHR5cGWUjANzaW6UdS4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Signal Generator"
+                        },
+                        "inputs": [
+                            {
+                                "type": "exec",
+                                "label": "",
+                                "GID": 10
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 11
+                            }
+                        ],
+                        "GID": 9,
+                        "pos x": 324.0,
+                        "pos y": 160.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.Gain",
+                        "version": "v0.1",
+                        "state data": "gASVHgAAAAAAAAB9lIwEZ2FpbpSMEEZpeGVkUG9pbnRGYWN0b3KUcy4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Gain"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 13,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 14
+                            }
+                        ],
+                        "GID": 12,
+                        "pos x": 539.0,
+                        "pos y": 169.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.ZOH",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "zoh"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 16,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 17
+                            }
+                        ],
+                        "GID": 15,
+                        "pos x": 173.0,
+                        "pos y": 376.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.Delay",
+                        "version": "v0.1",
+                        "state data": "gASVDgAAAAAAAAB9lIwFZGVsYXmUSwxzLg==",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Delay"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 19,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 20
+                            }
+                        ],
+                        "GID": 18,
+                        "pos x": 398.0,
+                        "pos y": 387.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.DigitalFilterDesign",
+                        "version": null,
+                        "state data": "gASVEQIAAAAAAAB9lCiMDXJlc3BvbnNlX3R5cGWUjAdMb3dwYXNzlIwMZmlsdGVyX29yZGVylEsYjA1kZXNpZ25fbWV0aG9klIwDRklSlIwKaWlyX2Rlc2lnbpSMC0J1dHRlcndvcnRolIwKZmlyX2Rlc2lnbpSMBldpbmRvd5SMDndpbmRvd19vcHRpb25zlIwLUmVjdGFuZ3VsYXKUjAJmc5RHQPdwAAAAAACMAmZjlEsBjAlmcGFzc19scGaUR0CvQAAAAAAAjAlmc3RvcF9scGaUR0CziAAAAAAAjAl3cGFzc19scGaURz/wAAAAAAAAjAl3c3RvcF9scGaURz/wAAAAAAAAjAlmcGFzc19ocGaUTeAujAlmc3RvcF9ocGaUTYAljAl3cGFzc19ocGaUSwGMCXdzdG9wX2hwZpRLAYwKZnN0b3AxX2JwZpRNIByMCmZwYXNzMV9icGaUTYAljApmcGFzczJfYnBmlE3gLowKZnN0b3AyX2JwZpRNQDiMCndzdG9wMV9icGaUSwGMCXdwYXNzX2JwZpRLAYwKd3N0b3AyX2JwZpRLAYwKZnBhc3MxX2JzZpRNIByMCmZzdG9wMV9ic2aUTYAljApmc3RvcDJfYnNmlE3gLowKZnBhc3MyX2JzZpRNQDiMCndwYXNzMV9ic2aUSwGMCXdzdG9wX2JzZpRLAYwKd3Bhc3MyX2JzZpRLAXUu",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Digital Filter Design"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 22,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 23
+                            }
+                        ],
+                        "GID": 21,
+                        "pos x": 626.0,
+                        "pos y": 559.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.PlotNew",
+                        "version": "v0.1",
+                        "state data": "gASVPAAAAAAAAAB9lCiMDG51bV9vZl9wb3J0c5RLAowHeF9yYW5nZZRHP1BiTdLxqfyMB3lfcmFuZ2WUR0DgmgAAAAAAdS4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Scope"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 25,
+                                "has widget": false
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 26,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [],
+                        "GID": 24,
+                        "pos x": 766.0,
+                        "pos y": 338.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.ToInt16",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Convert Type"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 28,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 29
+                            }
+                        ],
+                        "GID": 27,
+                        "pos x": 189.0,
+                        "pos y": 564.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.ToInt16",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Convert Type"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 31,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 32
+                            }
+                        ],
+                        "GID": 30,
+                        "pos x": 395.0,
+                        "pos y": 604.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.ToInt16",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Convert Type"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 34,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 35
+                            }
+                        ],
+                        "GID": 33,
+                        "pos x": 852.0,
+                        "pos y": 620.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    }
+                ],
+                "connections": [
+                    {
+                        "GID": 36,
+                        "parent node index": 0,
+                        "output port index": 0,
+                        "connected node": 1,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 37,
+                        "parent node index": 1,
+                        "output port index": 0,
+                        "connected node": 2,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 38,
+                        "parent node index": 2,
+                        "output port index": 0,
+                        "connected node": 3,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 39,
+                        "parent node index": 3,
+                        "output port index": 0,
+                        "connected node": 7,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 40,
+                        "parent node index": 4,
+                        "output port index": 0,
+                        "connected node": 6,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 41,
+                        "parent node index": 5,
+                        "output port index": 0,
+                        "connected node": 9,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 42,
+                        "parent node index": 7,
+                        "output port index": 0,
+                        "connected node": 4,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 43,
+                        "parent node index": 7,
+                        "output port index": 0,
+                        "connected node": 8,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 44,
+                        "parent node index": 7,
+                        "output port index": 0,
+                        "connected node": 5,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 45,
+                        "parent node index": 9,
+                        "output port index": 0,
+                        "connected node": 6,
+                        "connected input port index": 1
+                    }
+                ],
+                "GID": 6,
+                "flow view": {
+                    "drawings": [],
+                    "view size": [
+                        6400.0,
+                        4800.0
+                    ]
+                }
+            },
+            "GID": 1
+        },
+        {
+            "title": "Ex.3.2",
+            "variables": {
+                "fs": {
+                    "serialized": "gASVBgAAAAAAAABKAHcBAC4="
+                },
+                "frame_size": {
+                    "serialized": "gASVBAAAAAAAAABNAAgu"
+                },
+                "FixedPointFactor": {
+                    "serialized": "gASVBAAAAAAAAABNAIAu"
+                },
+                "Amp1": {
+                    "serialized": "gASVCgAAAAAAAABHP+mZmZmZmZou"
+                },
+                "f_signal": {
+                    "serialized": "gASVBAAAAAAAAABNuAsu"
+                }
+            },
+            "flow": {
+                "algorithm mode": "data",
+                "nodes": [
+                    {
+                        "identifier": "DSProject.ToInt16",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Convert Type"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 53,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 54
+                            }
+                        ],
+                        "GID": 52,
+                        "pos x": 412.0,
+                        "pos y": 588.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.Timer_Node",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "timer"
+                        },
+                        "inputs": [],
+                        "outputs": [
+                            {
+                                "type": "exec",
+                                "label": "",
+                                "GID": 56
+                            }
+                        ],
+                        "GID": 55,
+                        "pos x": 133.0,
+                        "pos y": 132.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.Delay",
+                        "version": "v0.1",
+                        "state data": "gASVDgAAAAAAAAB9lIwFZGVsYXmUSwpzLg==",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Delay"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 58,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 59
+                            }
+                        ],
+                        "GID": 57,
+                        "pos x": 415.0,
+                        "pos y": 371.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.DigitalFilterDesign",
+                        "version": null,
+                        "state data": "gASVEQIAAAAAAAB9lCiMDXJlc3BvbnNlX3R5cGWUjAdMb3dwYXNzlIwMZmlsdGVyX29yZGVylEsGjA1kZXNpZ25fbWV0aG9klIwDSUlSlIwKaWlyX2Rlc2lnbpSMC0J1dHRlcndvcnRolIwKZmlyX2Rlc2lnbpSMBldpbmRvd5SMDndpbmRvd19vcHRpb25zlIwLUmVjdGFuZ3VsYXKUjAJmc5RHQPdwAAAAAACMAmZjlEsBjAlmcGFzc19scGaUR0CvQAAAAAAAjAlmc3RvcF9scGaUR0CziAAAAAAAjAl3cGFzc19scGaURz/wAAAAAAAAjAl3c3RvcF9scGaURz/wAAAAAAAAjAlmcGFzc19ocGaUTeAujAlmc3RvcF9ocGaUTYAljAl3cGFzc19ocGaUSwGMCXdzdG9wX2hwZpRLAYwKZnN0b3AxX2JwZpRNIByMCmZwYXNzMV9icGaUTYAljApmcGFzczJfYnBmlE3gLowKZnN0b3AyX2JwZpRNQDiMCndzdG9wMV9icGaUSwGMCXdwYXNzX2JwZpRLAYwKd3N0b3AyX2JwZpRLAYwKZnBhc3MxX2JzZpRNIByMCmZzdG9wMV9ic2aUTYAljApmc3RvcDJfYnNmlE3gLowKZnBhc3MyX2JzZpRNQDiMCndwYXNzMV9ic2aUSwGMCXdzdG9wX2JzZpRLAYwKd3Bhc3MyX2JzZpRLAXUu",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Digital Filter Design"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 61,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 62
+                            }
+                        ],
+                        "GID": 60,
+                        "pos x": 643.0,
+                        "pos y": 543.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.ToInt16",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Convert Type"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 64,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 65
+                            }
+                        ],
+                        "GID": 63,
+                        "pos x": 206.0,
+                        "pos y": 548.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.ToInt16",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Convert Type"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 67,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 68
+                            }
+                        ],
+                        "GID": 66,
+                        "pos x": 869.0,
+                        "pos y": 604.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.Gain",
+                        "version": "v0.1",
+                        "state data": "gASVHgAAAAAAAAB9lIwEZ2FpbpSMEEZpeGVkUG9pbnRGYWN0b3KUcy4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Gain"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 70,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 71
+                            }
+                        ],
+                        "GID": 69,
+                        "pos x": 556.0,
+                        "pos y": 153.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.PlotNew",
+                        "version": "v0.1",
+                        "state data": "gASVPAAAAAAAAAB9lCiMDG51bV9vZl9wb3J0c5RLAowHeF9yYW5nZZRHP1BiTdLxqfyMB3lfcmFuZ2WUR0DgmgAAAAAAdS4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Scope"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 73,
+                                "has widget": false
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 74,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [],
+                        "GID": 72,
+                        "pos x": 783.0,
+                        "pos y": 322.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.ZOH",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "zoh"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 76,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 77
+                            }
+                        ],
+                        "GID": 75,
+                        "pos x": 190.0,
+                        "pos y": 360.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.Signal",
+                        "version": "v0.1",
+                        "state data": "gASVPAAAAAAAAAB9lCiMCWFtcGxpdHVkZZSMBEFtcDGUjAlmcmVxdWVuY3mUjAhmX3NpZ25hbJSMBHR5cGWUjANzaW6UdS4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Signal Generator"
+                        },
+                        "inputs": [
+                            {
+                                "type": "exec",
+                                "label": "",
+                                "GID": 79
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 80
+                            }
+                        ],
+                        "GID": 78,
+                        "pos x": 341.0,
+                        "pos y": 144.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    }
+                ],
+                "connections": [
+                    {
+                        "GID": 81,
+                        "parent node index": 1,
+                        "output port index": 0,
+                        "connected node": 9,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 82,
+                        "parent node index": 2,
+                        "output port index": 0,
+                        "connected node": 7,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 83,
+                        "parent node index": 3,
+                        "output port index": 0,
+                        "connected node": 5,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 84,
+                        "parent node index": 4,
+                        "output port index": 0,
+                        "connected node": 2,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 85,
+                        "parent node index": 4,
+                        "output port index": 0,
+                        "connected node": 0,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 86,
+                        "parent node index": 4,
+                        "output port index": 0,
+                        "connected node": 3,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 87,
+                        "parent node index": 5,
+                        "output port index": 0,
+                        "connected node": 7,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 88,
+                        "parent node index": 6,
+                        "output port index": 0,
+                        "connected node": 8,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 89,
+                        "parent node index": 8,
+                        "output port index": 0,
+                        "connected node": 4,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 90,
+                        "parent node index": 9,
+                        "output port index": 0,
+                        "connected node": 6,
+                        "connected input port index": 0
+                    }
+                ],
+                "GID": 51,
+                "flow view": {
+                    "drawings": [],
+                    "view size": [
+                        6400.0,
+                        4800.0
+                    ]
+                }
+            },
+            "GID": 46
+        },
+        {
+            "title": "Ex.3.3",
+            "variables": {},
+            "flow": {
+                "algorithm mode": "data",
+                "nodes": [],
+                "connections": [],
+                "GID": 96,
+                "flow view": {
+                    "drawings": [],
+                    "view size": [
+                        6400.0,
+                        4800.0
+                    ]
+                }
+            },
+            "GID": 91
+        },
+        {
+            "title": "Ex.3.4",
+            "variables": {
+                "fs": {
+                    "serialized": "gASVBAAAAAAAAABNgD4u"
+                },
+                "frame_size": {
+                    "serialized": "gASVBAAAAAAAAABNAAQu"
+                },
+                "f_signal": {
+                    "serialized": "gASVBAAAAAAAAABNlBEu"
+                }
+            },
+            "flow": {
+                "algorithm mode": "data",
+                "nodes": [
+                    {
+                        "identifier": "DSProject.DigitalFilterDesign",
+                        "version": null,
+                        "state data": "gASVEgIAAAAAAAB9lCiMDXJlc3BvbnNlX3R5cGWUjAdMb3dwYXNzlIwMZmlsdGVyX29yZGVylEtRjA1kZXNpZ25fbWV0aG9klIwDRklSlIwKaWlyX2Rlc2lnbpSMC0J1dHRlcndvcnRolIwKZmlyX2Rlc2lnbpSMCkVxdWlyaXBwbGWUjA53aW5kb3dfb3B0aW9uc5SMCEJhcnRsZXR0lIwCZnOUR0DPQAAAAAAAjAJmY5RLAYwJZnBhc3NfbHBmlEdAr0AAAAAAAIwJZnN0b3BfbHBmlEdAsZQAAAAAAIwJd3Bhc3NfbHBmlEc/8AAAAAAAAIwJd3N0b3BfbHBmlEdAgfgAAAAAAIwJZnBhc3NfaHBmlE3gLowJZnN0b3BfaHBmlE2AJYwJd3Bhc3NfaHBmlEsBjAl3c3RvcF9ocGaUSwGMCmZzdG9wMV9icGaUTSAcjApmcGFzczFfYnBmlE2AJYwKZnBhc3MyX2JwZpRN4C6MCmZzdG9wMl9icGaUTUA4jAp3c3RvcDFfYnBmlEsBjAl3cGFzc19icGaUSwGMCndzdG9wMl9icGaUSwGMCmZwYXNzMV9ic2aUTSAcjApmc3RvcDFfYnNmlE2AJYwKZnN0b3AyX2JzZpRN4C6MCmZwYXNzMl9ic2aUTUA4jAp3cGFzczFfYnNmlEsBjAl3c3RvcF9ic2aUSwGMCndwYXNzMl9ic2aUSwF1Lg==",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Digital Filter Design"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 104,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 105
+                            }
+                        ],
+                        "GID": 103,
+                        "pos x": 888.0,
+                        "pos y": 190.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.Timer_Node",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "timer"
+                        },
+                        "inputs": [],
+                        "outputs": [
+                            {
+                                "type": "exec",
+                                "label": "",
+                                "GID": 107
+                            }
+                        ],
+                        "GID": 106,
+                        "pos x": 97.0,
+                        "pos y": 143.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.Signal",
+                        "version": "v0.1",
+                        "state data": "gASVPAAAAAAAAAB9lCiMCWFtcGxpdHVkZZSMBDEwMDCUjAlmcmVxdWVuY3mUjAhmX3NpZ25hbJSMBHR5cGWUjANzaW6UdS4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Signal Generator"
+                        },
+                        "inputs": [
+                            {
+                                "type": "exec",
+                                "label": "",
+                                "GID": 109
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 110
+                            }
+                        ],
+                        "GID": 108,
+                        "pos x": 300.0,
+                        "pos y": 147.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.ZOH",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "zoh"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 112,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 113
+                            }
+                        ],
+                        "GID": 111,
+                        "pos x": 511.0,
+                        "pos y": 142.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.ReadWavAudio",
+                        "version": null,
+                        "state data": "gASVcQAAAAAAAAB9lIwEcGF0aJSMY0FwcERhdGFcTG9jYWxcUHJvZ3JhbXNcUHl0aG9uXFB5dGhvbjMxMFxMaWJcc2l0ZS1wYWNrYWdlc1xyeXZlblxleGFtcGxlX25vZGVzXERTUHJvamVjdFxyZWNvcmQxLndhdpRzLg==",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Read Wav"
+                        },
+                        "inputs": [
+                            {
+                                "type": "exec",
+                                "label": "",
+                                "GID": 115
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 116
+                            }
+                        ],
+                        "GID": 114,
+                        "pos x": 188.0,
+                        "pos y": 463.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.PlotNew",
+                        "version": "v0.1",
+                        "state data": "gASVPAAAAAAAAAB9lCiMDG51bV9vZl9wb3J0c5RLAYwHeF9yYW5nZZRHP/AAAAAAAACMB3lfcmFuZ2WURz/wAAAAAAAAdS4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Scope"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 118,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [],
+                        "GID": 117,
+                        "pos x": 221.0,
+                        "pos y": 682.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.NewPlus",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Plus"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 120,
+                                "has widget": false
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 121,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 122
+                            }
+                        ],
+                        "GID": 119,
+                        "pos x": 565.0,
+                        "pos y": 387.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.Switch_Node",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Switch"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 124,
+                                "has widget": false
+                            },
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 125,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 126
+                            }
+                        ],
+                        "GID": 123,
+                        "pos x": 1112.0,
+                        "pos y": 354.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.PlotNew",
+                        "version": "v0.1",
+                        "state data": "gASVPAAAAAAAAAB9lCiMDG51bV9vZl9wb3J0c5RLAYwHeF9yYW5nZZRHP/AAAAAAAACMB3lfcmFuZ2WURz/wAAAAAAAAdS4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Scope"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 128,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [],
+                        "GID": 127,
+                        "pos x": 1395.0,
+                        "pos y": 418.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.ToInt16",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Convert Type"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 130,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 131
+                            }
+                        ],
+                        "GID": 129,
+                        "pos x": 1240.0,
+                        "pos y": 609.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.PlayAudio",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Speaker"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 133,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [],
+                        "GID": 132,
+                        "pos x": 1465.0,
+                        "pos y": 613.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.ToInt16",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Convert Type"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 137,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 138
+                            }
+                        ],
+                        "GID": 136,
+                        "pos x": 651.0,
+                        "pos y": 611.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.WriteWavAudio",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Write Audio to File"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 140,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [],
+                        "GID": 139,
+                        "pos x": 803.0,
+                        "pos y": 811.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.WriteWavAudio",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Write Audio to File"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 142,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [],
+                        "GID": 141,
+                        "pos x": 1483.0,
+                        "pos y": 832.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "DSProject.SpectrumAndSpectrogramAnalyzer",
+                        "version": null,
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Spectrum Analyzer"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 160,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [],
+                        "GID": 159,
+                        "pos x": 1216.0,
+                        "pos y": 148.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    }
+                ],
+                "connections": [
+                    {
+                        "GID": 143,
+                        "parent node index": 0,
+                        "output port index": 0,
+                        "connected node": 7,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 161,
+                        "parent node index": 0,
+                        "output port index": 0,
+                        "connected node": 14,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 144,
+                        "parent node index": 1,
+                        "output port index": 0,
+                        "connected node": 2,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 145,
+                        "parent node index": 1,
+                        "output port index": 0,
+                        "connected node": 4,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 146,
+                        "parent node index": 2,
+                        "output port index": 0,
+                        "connected node": 3,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 147,
+                        "parent node index": 3,
+                        "output port index": 0,
+                        "connected node": 6,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 148,
+                        "parent node index": 4,
+                        "output port index": 0,
+                        "connected node": 5,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 149,
+                        "parent node index": 4,
+                        "output port index": 0,
+                        "connected node": 6,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 150,
+                        "parent node index": 6,
+                        "output port index": 0,
+                        "connected node": 0,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 151,
+                        "parent node index": 6,
+                        "output port index": 0,
+                        "connected node": 7,
+                        "connected input port index": 1
+                    },
+                    {
+                        "GID": 152,
+                        "parent node index": 6,
+                        "output port index": 0,
+                        "connected node": 11,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 153,
+                        "parent node index": 7,
+                        "output port index": 0,
+                        "connected node": 8,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 154,
+                        "parent node index": 7,
+                        "output port index": 0,
+                        "connected node": 9,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 156,
+                        "parent node index": 9,
+                        "output port index": 0,
+                        "connected node": 10,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 157,
+                        "parent node index": 9,
+                        "output port index": 0,
+                        "connected node": 13,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 158,
+                        "parent node index": 11,
+                        "output port index": 0,
+                        "connected node": 12,
+                        "connected input port index": 0
+                    }
+                ],
+                "GID": 102,
+                "flow view": {
+                    "drawings": [],
+                    "view size": [
+                        6400.0,
+                        4800.0
+                    ]
+                }
+            },
+            "GID": 97
+        }
+    ]
+}
