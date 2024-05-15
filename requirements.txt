@@ -1,3 +1,4 @@
 -e ./ryven
 -e ./ryvencore
 -e ./ryvencore-qt
+pyqt
