@@ -5,15 +5,18 @@ Summary: Flow-based visual scripting for Python
 Home-page: https://github.com/leon-thomm/Ryven
 Author: Leon Thomm
 Author-email: l.thomm@mailbox.org
-License: UNKNOWN
 Project-URL: Website, https://ryven.org
-Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: !=3.10,>=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE
+Requires-Dist: ryvencore-qt==0.3.1.*
+Requires-Dist: ryvencore==0.3.1.*
+Requires-Dist: Jinja2
+Requires-Dist: Pygments
+Requires-Dist: textdistance
 
 <p align="center">
   <img src="./docs/img/logo.png" alt="drawing" width="70%"/>
@@ -245,5 +248,3 @@ Also notice that there's a *discussions* area in this repo.
 The docs page on the website is made with [Docsify](https://github.com/docsifyjs/docsify/), so you can improve it by simply editing the markdown. The whole [website sources](https://github.com/leon-thomm/ryven-website) are also on GitHub.
 
 Cheers.
-
-

@@ -3,3 +3,12 @@
 -e ./ryvencore-qt
 qtpy
 PySide2
+numpy
+scipy
+pyqtgraph
+sounddevice
+pyaudio
+librosa
+matplotlib
+mplcursors
+scikit-dsp-comm

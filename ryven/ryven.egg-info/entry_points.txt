@@ -1,4 +1,3 @@
 [console_scripts]
 ryven = ryven:run_ryven
 ryven_console = ryven:run_ryven_console
-
