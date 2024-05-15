@@ -1,0 +1,131 @@
+{
+    "general info": {
+        "type": "Ryven project file",
+        "ryven version": "v3.1"
+    },
+    "required packages": [
+        {
+            "name": "dsp",
+            "dir": "C:/Users/shalo/Shalom Projects/DSProject/ryven/ryven/example_nodes/dsp"
+        }
+    ],
+    "scripts": [
+        {
+            "title": "hello world",
+            "variables": {
+                "fs": {
+                    "serialized": "gASVBAAAAAAAAABNgD4u"
+                },
+                "frame_size": {
+                    "serialized": "gASVBAAAAAAAAABNAAQu"
+                }
+            },
+            "flow": {
+                "algorithm mode": "data",
+                "nodes": [
+                    {
+                        "identifier": "dsp.Timer_Node",
+                        "version": "v0.1",
+                        "state data": "gAR9lC4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "timer"
+                        },
+                        "inputs": [],
+                        "outputs": [
+                            {
+                                "type": "exec",
+                                "label": "",
+                                "GID": 8
+                            }
+                        ],
+                        "GID": 7,
+                        "pos x": 186.0,
+                        "pos y": 236.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "dsp.Signal",
+                        "version": "v0.1",
+                        "state data": "gASVNAAAAAAAAAB9lCiMCWFtcGxpdHVkZZSMATGUjAlmcmVxdWVuY3mUjAMxMDCUjAR0eXBllIwDc2lulHUu",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Signal Generator"
+                        },
+                        "inputs": [
+                            {
+                                "type": "exec",
+                                "label": "",
+                                "GID": 10
+                            }
+                        ],
+                        "outputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 11
+                            }
+                        ],
+                        "GID": 9,
+                        "pos x": 458.0,
+                        "pos y": 299.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    },
+                    {
+                        "identifier": "dsp.PlotNew",
+                        "version": "v0.1",
+                        "state data": "gASVPAAAAAAAAAB9lCiMDG51bV9vZl9wb3J0c5RLAYwHeF9yYW5nZZRHP7mZmZmZmZqMB3lfcmFuZ2WURz/wAAAAAAAAdS4=",
+                        "additional data": {
+                            "special actions": {},
+                            "display title": "Scope"
+                        },
+                        "inputs": [
+                            {
+                                "type": "data",
+                                "label": "",
+                                "GID": 13,
+                                "has widget": false
+                            }
+                        ],
+                        "outputs": [],
+                        "GID": 12,
+                        "pos x": 734.0,
+                        "pos y": 267.0,
+                        "main widget data": "gAR9lC4=",
+                        "unconnected ports hidden": false,
+                        "collapsed": false
+                    }
+                ],
+                "connections": [
+                    {
+                        "GID": 14,
+                        "parent node index": 0,
+                        "output port index": 0,
+                        "connected node": 1,
+                        "connected input port index": 0
+                    },
+                    {
+                        "GID": 15,
+                        "parent node index": 1,
+                        "output port index": 0,
+                        "connected node": 2,
+                        "connected input port index": 0
+                    }
+                ],
+                "GID": 6,
+                "flow view": {
+                    "drawings": [],
+                    "view size": [
+                        6400.0,
+                        4800.0
+                    ]
+                }
+            },
+            "GID": 1
+        }
+    ]
+}
