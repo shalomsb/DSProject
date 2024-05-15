@@ -2,3 +2,4 @@
 -e ./ryvencore
 -e ./ryvencore-qt
 qtpy
+PyQt5==5.15.9
